@@ -1,17 +1,27 @@
 import React from 'react';
-const proyectImg = require.context('../../img', true);
+import shieldImg from '../../img/shield.png';
+import oppiaImg from '../../img/oppia.png';
 
 const Random = () => {
+  const [clickedCard, setClickedCard] = React.useState(null);
+
+  const handleCardClick = (index) => {
+    setClickedCard(clickedCard === index ? null : index);
+  };
+
   return (
     <section className="random" id="random">
       <div className="experience_col" data-aos="fade-up" data-aos-delay="1000">
         <h3>Professional Journey</h3>
         <div className="experience_cards">
-          <div className="exp-card">
+          <div
+            className={`exp-card ${clickedCard === 0 ? 'clicked' : ''}`}
+            onClick={() => handleCardClick(0)}
+          >
             <div className="header">
               <div className="header-top">
                 <div className="img-container">
-                  <img src={proyectImg(`./shield.png`)} alt="ShieldByte logo" />
+                  <img src={shieldImg} alt="ShieldByte logo" />
                 </div>
                 <div className="text-container">
                   <p className="subtitle">ShieldByte Infosec Pvt. Ltd.</p>
@@ -39,11 +49,14 @@ const Random = () => {
             </ul>
           </div>
 
-          <div className="exp-card">
+          <div
+            className={`exp-card ${clickedCard === 1 ? 'clicked' : ''}`}
+            onClick={() => handleCardClick(1)}
+          >
             <div className="header">
               <div className="header-top">
                 <div className="img-container">
-                  <img src={proyectImg(`./oppia.png`)} alt="Freelancer logo" />
+                  <img src={oppiaImg} alt="Freelancer logo" />
                 </div>
                 <div className="text-container">
                   <p className="subtitle">Freelancer</p>
@@ -116,9 +129,10 @@ const Random = () => {
               box-shadow: var(--box-shadow);
               transition: all 0.3s ease;
               transform: scale(0.95);
+              cursor: pointer;
             }
 
-            .exp-card:hover {
+            .exp-card:hover, .exp-card.clicked {
               background: var(--black);
               color: var(--light-color);
               transform: scale(1);
@@ -162,16 +176,31 @@ const Random = () => {
               text-align: center;
             }
 
+            .exp-card:hover .title, .exp-card.clicked .title {
+              background: linear-gradient(to right, #00c4ff, #007bff);
+              -webkit-background-clip: text;
+              background-clip: text;
+              color: transparent;
+            }
+
             .exp-card .subtitle {
               font-size: 1rem;
               color: #00040f;
               margin: 8px 0;
             }
 
+            .exp-card:hover .subtitle, .exp-card.clicked .subtitle {
+              color: var(--light-color);
+            }
+
             .exp-card .date {
               font-size: 0.875rem;
               color: #4b5563;
               font-style: italic;
+            }
+
+            .exp-card:hover .date, .exp-card.clicked .date {
+              color: var(--light-color);
             }
 
             .exp-card .description {
@@ -189,7 +218,7 @@ const Random = () => {
               align-items: flex-start;
             }
 
-            .exp-card:hover .description li {
+            .exp-card:hover .description li, .exp-card.clicked .description li {
               color: var(--light-color);
             }
 
@@ -200,7 +229,7 @@ const Random = () => {
               margin-top: 0.3rem;
             }
 
-            .exp-card:hover .description li i {
+            .exp-card:hover .description li i, .exp-card.clicked .description li i {
               color: var(--light-color);
             }
 
@@ -214,7 +243,7 @@ const Random = () => {
                 transform: scale(1);
               }
 
-              .exp-card:hover {
+              .exp-card:hover, .exp-card.clicked {
                 transform: scale(1);
               }
             }

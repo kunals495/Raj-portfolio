@@ -21,7 +21,7 @@ const Project = () => {
             <h2 className="heading">
                 <FormattedMessage
                     id='projects'
-                    defaultMessage='Projects'
+                    defaultMessage='Licenses & Certifications'
                 />
             </h2>
             <div className="proyect-site" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">

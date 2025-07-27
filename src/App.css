@@ -156,24 +156,37 @@ main,
 }
 
 /* Media query for mobile devices */
+/* Inside your existing @media (max-width: 768px) and 570px block */
 @media (max-width: 768px) {
     .loader {
-        width: 80vw; /* Adjust to phone width */
-        height: 80vh; /* Allow vertical space */
+        width: 90vw; /* Increased width responsiveness */
+        height: auto;
+        padding: 2rem 1rem;
+        flex-direction: column;
     }
 
     .loader span {
-        font-size: 3rem; /* Adjusted for mobile readability */
-        transform: translate(-50%, -50%) ;
-        letter-spacing: 2px;
+        font-size: 2.5rem; /* Reduced font size */
+        letter-spacing: 1px;
+        text-align: center;
+        white-space: normal; /* Allow wrapping */
+        width: 100%;
     }
 
     .loader::after {
-        width: 150px;
-        height: 150px;
-        transform: translate(-50%, -50%) rotate(90deg); /* Rotate glow to match text */
+        width: 120px;
+        height: 120px;
     }
 }
+
+@media (max-width: 480px) {
+    .loader span {
+        font-size: 2rem;
+        letter-spacing: 0.5px;
+        line-height: 1.2;
+    }
+}
+
 
 .heading{
     text-align: center;

@@ -11,7 +11,7 @@ const Service = () => (
         <h2 className="heading">
             <FormattedMessage
                 id='services'
-                defaultMessage='Services'
+                defaultMessage='Experience'
             />
         </h2>
         <div className="row">
