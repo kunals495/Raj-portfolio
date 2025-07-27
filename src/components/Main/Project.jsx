@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../pages/Project/ProjectPage.css'
+import '../../pages/Project/project.css'
 import { Link } from 'react-router-dom';
 
 

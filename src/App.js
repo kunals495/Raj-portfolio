@@ -9,12 +9,13 @@ import './App.css';
 import Home from "./pages/Home/HomePage";
 import About from "./pages/About/AboutPage";
 import Services from "./pages/Service/ServicesPage";
-import Project from "./pages/Project/ProjectPage";
-import ProjectApp from "./pages/Project/ProjectApp";
-import ProjectGame from "./pages/Project/ProjectGame";
 
+import Project from './components/Main/Project';
 import RouterScrollTop from "./components/ParticlesBg/RouterScrollTop"
 import Random from './components/Main/Random';
+import Admin from './components/Main/admin';
+
+
 
 
 function App() {
@@ -43,12 +44,11 @@ function App() {
 
                     <Routes>
                         <Route path="/" element={<Home />}></Route>
+                        <Route exact path="/admin" element={<Admin/>}></Route>
                         <Route exact path="/about" element={<About />}></Route>
                         <Route exact path="/service" element={<Services />}></Route>
                         <Route exact path="/project" element={<Project />}></Route>
                         <Route exact path="/random" element={<Random />}></Route>
-                        <Route exact path="/project/app" element={<ProjectApp />} />
-                        <Route exact path="/project/game" element={<ProjectGame />} />
                     </Routes>
 
             }
