@@ -18,19 +18,19 @@ const Content = () => (
                 <p data-aos="fade-up" data-aos-delay="600">
                     <FormattedMessage
                         id='greeting'
-                        defaultMessage='Hello'
+                        defaultMessage='Hii, Hackers!'
                     />
                 </p>
                 <h1 data-aos="fade-up" data-aos-delay="800">
                     <FormattedMessage
                         id='name'
-                        defaultMessage='I am Nahuel Carrizo'
+                        defaultMessage='I am RajKumar Prajapati'
                     />
                 </h1>
                 <p data-aos="fade-up" data-aos-delay="1000">
                     <FormattedMessage
                         id='rol'
-                        defaultMessage='Full-stack developer'
+                        defaultMessage='CyberSecruity Analytics'
                     />
                 </p>
 

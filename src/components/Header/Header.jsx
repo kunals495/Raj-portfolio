@@ -55,20 +55,20 @@ const Header = () => {
                 <Link to="random" spy={true} offset={-150} href="#sobre-mi">
                     <FormattedMessage
                         id='exp'
-                        defaultMessage='About me'
+                        defaultMessage='Professional Journey'
                     />
                     
                 </Link>
                 <Link to="servicios" spy={true} offset={-150} href="#servicios">
                     <FormattedMessage
                         id='services'
-                        defaultMessage='Services'
+                        defaultMessage='Experience'
                     />
                 </Link>
                 <Link to="proyectos" spy={true} offset={-150} href="#proyectos">
                     <FormattedMessage
                         id='projects'
-                        defaultMessage='Projects'
+                        defaultMessage='Licenses & Certifications'
                     />
                 </Link>
                 <Link to="contactos" spy={true} offset={-150} href="#contactos">
