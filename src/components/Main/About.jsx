@@ -115,19 +115,19 @@ const About = () => (
                     <h3>
                         <FormattedMessage
                             id='im'
-                            defaultMessage='Who I am'
+                            defaultMessage="This isn't an intro, it's a recon dump on me"
                         />
                     </h3>
                     <h4>
                         <FormattedMessage
                             id='description'
-                            defaultMessage='My name is Esteban Nahuel Carrizo and I am a full stack developer.'
+                            defaultMessage='My name is Rajkumar Prajapati and I am CyberSecurity Analytics'
                         />
                     </h4>
                     <p>
                         <FormattedMessage
                             id='my-description'
-                            defaultMessage='I have been working on web designing and web development for 4 years. Constantly updating the technologies I already master, but also looking to learn new technologies to enrich my skills and improve my good practices as a developer.'
+                            defaultMessage='A Passionate Cybersecurity Analyst & Ethical Hacker with hands-on experience in Web, API, Android, iOS, and Cloud Pentesting. I specialize in identifying and reporting vulnerabilities through manual and automated testing, backed by solid coding skills in Python, Java, and web technologies. From source code reviews to AWS cloud misconfigurations, I deliver actionable security insights through professional reports and proof-of-concept exploits.'
                         />
                     </p>
                     <ul>

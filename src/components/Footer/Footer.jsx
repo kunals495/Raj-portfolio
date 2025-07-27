@@ -16,7 +16,7 @@ const Footer = () =>{
                     <p>
                         <FormattedMessage
                             id='footer-info'
-                            defaultMessage='Page created by Nahuel61920'
+                            defaultMessage='Created by Raj Prajapati 🛡️'
                         />
                     </p>
                     <p>&copy; {fecha} Because even hackers need Portfolios</p>

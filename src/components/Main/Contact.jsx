@@ -19,7 +19,7 @@ const Contact = () => (
         <h3 className="titulo" data-aos="fade-left" data-aos-delay="300">
             <FormattedMessage
                 id='contact-info'
-                defaultMessage='Contact me by: '
+                defaultMessage='Trace Me Here :'
             />
             <Typical
                 className="site-contacto"

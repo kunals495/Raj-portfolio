@@ -164,7 +164,7 @@ main,
 
     .loader span {
         font-size: 3rem; /* Adjusted for mobile readability */
-        transform: translate(-50%, -50%) rotate(90deg); /* Rotate text for vertical display */
+        transform: translate(-50%, -50%) ;
         letter-spacing: 2px;
     }
 
