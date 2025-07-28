@@ -240,7 +240,7 @@ const About = () => (
                         </div>
                         <div>
                             <img alt="Metaspolite" className="icons-skils" src={proyectImg(`./metp.png`)} title="Visual Studio Code" />
-                            <h5>Metaspolite</h5>
+                            <h5>Metaspolit</h5>
                         </div>
                          <div>
                             <img alt="Nessus" className="icons-skils1" src={proyectImg(`./nes.png`)} title="Visual Studio Code" />
