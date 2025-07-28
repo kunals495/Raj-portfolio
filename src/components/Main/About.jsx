@@ -121,7 +121,7 @@ const About = () => (
                     <h4>
                         <FormattedMessage
                             id='description'
-                            defaultMessage='My name is Rajkumar Prajapati and I am CyberSecurity Analytics'
+                            defaultMessage='My name is Rajkumar Prajapati and I am CyberSecurity Analyst'
                         />
                     </h4>
                     <p>
